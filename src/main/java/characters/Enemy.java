@@ -1,6 +1,8 @@
 package characters;
 
 
+import behaviours.IAttack;
+import behaviours.IDefend;
 import items.Weapon;
 
 public class Enemy extends Entity {
@@ -20,5 +22,12 @@ public class Enemy extends Entity {
         return weapon.getDamage();
     }
 
+    public void attack(IDefend defender) {
+        health -= defender.defend();
+    }
+
+    public int defend(IAttack attacker) {
+        return attacker.getWeaponDamage();
+    }
 
 }

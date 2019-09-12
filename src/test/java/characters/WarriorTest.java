@@ -52,6 +52,12 @@ public class WarriorTest {
         assertEquals(40, warrior.getWeaponDamage());
     }
 
+    @Test
+    public void canTakeDamage() {
+        warrior.attack();
+        assertEquals(360, warrior.getHealth());
+    }
+
 
 
 

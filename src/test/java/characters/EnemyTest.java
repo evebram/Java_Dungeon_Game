@@ -1,5 +1,6 @@
 package characters;
 
+import items.Armour;
 import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,11 +10,12 @@ import static org.junit.Assert.assertEquals;
 public class EnemyTest {
 
     Enemy enemy;
+    Warrior warrior;
 
     @Before
     public void setUp() {
         enemy = new Enemy("Ben", "Troll", 100, Weapon.CLUB);
-
+        warrior = new Warrior("Eve", "Dwarf", 400, Armour.HELMET, Weapon.CLUB);
     }
 
     @Test
@@ -39,6 +41,18 @@ public class EnemyTest {
     @Test
     public void hasWeaponDamage() {
         assertEquals(40, enemy.getWeaponDamage());
+    }
+
+    @Test
+    public void canDefend() {
+        enemy.defend(warrior);
+        assertEquals();
+    }
+
+    @Test
+    public void canAttack() {
+        enemy.attack(warrior);
+        assertEquals();
     }
 
 

@@ -1,9 +1,11 @@
 package characters;
 
+import behaviours.IAttack;
+import behaviours.IDefend;
 import items.Armour;
 import items.Weapon;
 
-public class Warrior extends Entity {
+public class Warrior extends Entity implements IAttack, IDefend {
 
     private Armour armour;
     private Weapon weapon;
@@ -29,6 +31,15 @@ public class Warrior extends Entity {
     public int getWeaponDamage() {
         return weapon.getDamage();
     }
+
+    public int defend(IAttack attacker){ //int damage
+       return attacker.getWeaponDamage() // getArmourResistance();
+    }
+
+    public void attack(IDefend defender) { //calls iDefend of attacked
+        health -= defender.defend(attackStrength);
+    }
+
 
 
 }
