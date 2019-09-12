@@ -8,6 +8,7 @@ public class Room {
 
     private Room room;
     private String name;
+    private Enemy enemy;
 
     public Room(String name){
         this.name = name;
