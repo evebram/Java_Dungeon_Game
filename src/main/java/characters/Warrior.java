@@ -3,7 +3,10 @@ package characters;
 import behaviours.IAttack;
 import behaviours.IDefend;
 import items.Armour;
+import items.Treasure;
 import items.Weapon;
+
+import java.util.ArrayList;
 
 public class Warrior extends Entity implements IAttack, IDefend {
 

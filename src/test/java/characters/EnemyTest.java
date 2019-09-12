@@ -1,6 +1,7 @@
 package characters;
 
 import items.Armour;
+import items.Treasure;
 import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;

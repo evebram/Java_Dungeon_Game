@@ -1,6 +1,7 @@
 package characters;
 
 import items.Armour;
+import items.Treasure;
 import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
@@ -66,7 +67,18 @@ public class WarriorTest {
         assertEquals(40, enemy.getWeaponDamage()); // make sure warrior health goes down
     }
 
+    @Test
+    public void canGetTreasure() {
+        warrior.getTreasure(Treasure.RUBY);
+        assertEquals(1, warrior.getTreasureCount());
+    }
 
+    @Test
+    public void canCollectReward(){
+        enemy.getTreasure(Treasure.RUBY);
+        warrior.collectReward(enemy);
+        assertEquals(1, warrior.getTreasureCount());
+    }
 
 
 }
