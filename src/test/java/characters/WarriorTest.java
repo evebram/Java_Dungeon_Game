@@ -10,10 +10,12 @@ import static org.junit.Assert.assertEquals;
 public class WarriorTest {
 
     Warrior warrior;
+    Enemy enemy;
 
     @Before
     public void setUp() {
         warrior = new Warrior("Eve", "Dwarf", 400, Armour.HELMET, Weapon.CLUB);
+        enemy = new Enemy("Ben", "Troll", 100, Weapon.CLUB);
 
     }
 
@@ -53,9 +55,15 @@ public class WarriorTest {
     }
 
     @Test
-    public void canTakeDamage() {
-        warrior.attack();
-        assertEquals(360, warrior.getHealth());
+    public void canDefend() {
+        warrior.defend(40);
+        assertEquals(387, warrior.getHealth()); // make sure enemy attack goes down
+    }
+
+    @Test
+    public void canAttack() {
+        warrior.attack(enemy);
+        assertEquals(40, enemy.getWeaponDamage()); // make sure warrior health goes down
     }
 
 

@@ -30,13 +30,10 @@ public abstract class Entity implements IDefend {
         return health;
     }
 
-    public void takeDamage(){
-        health -= defend(IAttack attacker);
+    public void takeDamage(int damage){
+        health -= damage;
     }
 
-    public int defend(IAttack attacker) {
-        return attackStrength = attacker.getWeaponDamage();
-    }
 
 
 }

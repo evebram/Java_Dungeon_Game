@@ -45,14 +45,14 @@ public class EnemyTest {
 
     @Test
     public void canDefend() {
-        enemy.defend(warrior);
-        assertEquals();
+        enemy.defend(40);
+        assertEquals(60, enemy.getHealth()); // make sure enemy attack goes down
     }
 
     @Test
     public void canAttack() {
         enemy.attack(warrior);
-        assertEquals();
+        assertEquals(40, warrior.getWeaponDamage()); // make sure warrior health goes down
     }
 
 

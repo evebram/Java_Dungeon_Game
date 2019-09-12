@@ -22,12 +22,14 @@ public class Enemy extends Entity {
         return weapon.getDamage();
     }
 
-    public void attack(IDefend defender) {
-        health -= defender.defend();
+    public void defend(int attackPower){ //int damage
+        int postArmourDamage = attackPower;
+        this.takeDamage(postArmourDamage);
     }
 
-    public int defend(IAttack attacker) {
-        return attacker.getWeaponDamage();
+    public void attack(IDefend defender) { //calls iDefend of attacked
+        int attackPower = this.getWeaponDamage();
+        defender.defend(attackPower);
     }
 
 }
