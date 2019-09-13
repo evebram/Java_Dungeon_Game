@@ -12,6 +12,6 @@ public enum Spell {
     }
 
     public int getDamage() {
-        return this.damage;
+        return damage;
     }
 }

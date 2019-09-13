@@ -8,8 +8,8 @@ public enum Familiar {
 
     private final int resistance;
 
-    Familiar(int resisitance) {
-        this.resistance = resisitance;
+    Familiar(int resistance) {
+        this.resistance = resistance;
     }
 
     public int getResistance() {

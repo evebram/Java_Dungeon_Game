@@ -1,17 +1,18 @@
 package items;
 
 public enum HealingItem {
-    HERBS(5),
-    POTION(10),
-    PRAYEROFHEALING(15);
 
-    private final int healing;
+    HERBS(10),
+    POTION(15),
+    HEALINGPRAYER(20);
 
-    HealingItem(int healing) {
-        this.healing = healing;
+    private final int restore;
+
+    HealingItem(int restore) {
+        this.restore = restore;
     }
 
-    public int getHealing() {
-        return this.healing;
+    public int getRestoration() {
+        return restore;
     }
 }

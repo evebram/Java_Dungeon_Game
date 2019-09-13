@@ -13,6 +13,6 @@ public enum Weapon {
     }
 
     public int getDamage() {
-        return this.damage;
+        return damage;
     }
 }
