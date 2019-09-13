@@ -4,6 +4,6 @@ import items.Weapon;
 
 public interface IAttack {
 
-    void attack(IDefend defender); //thing your attacking
+    void attack(IDefend target); //thing you're attacking
 
 }

@@ -37,6 +37,10 @@ public abstract class Entity implements IDefend {
         health -= damage;
     }
 
+    public void getHealing(int restoration) {
+        health += restoration;
+    }
+
     public void getTreasure(Treasure item){
         inventory.add(item);
     }
@@ -50,6 +54,10 @@ public abstract class Entity implements IDefend {
 
     public int getTreasureCount(){
         return inventory.size();
+    }
+
+    public boolean isAlive(){
+        return health > 0;
     }
 
 }

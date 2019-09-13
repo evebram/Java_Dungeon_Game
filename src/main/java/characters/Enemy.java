@@ -30,9 +30,9 @@ public class Enemy extends Entity {
         this.takeDamage(postArmourDamage);
     }
 
-    public void attack(IDefend defender) { //calls iDefend of attacked
+    public void attack(IDefend target) { //calls iDefend of attacked
         int attackPower = this.getWeaponDamage();
-        defender.defend(attackPower);
+        target.defend(attackPower);
     }
 
 }

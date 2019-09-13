@@ -1,23 +1,25 @@
 package characters;
 
 import items.Armour;
+import items.HealingItem;
 import items.Treasure;
 import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class WarriorTest {
 
     Warrior warrior;
     Enemy enemy;
+    Cleric cleric;
 
     @Before
     public void setUp() {
         warrior = new Warrior("Eve", "Dwarf", 400, Armour.HELMET, Weapon.CLUB);
         enemy = new Enemy("Ben", "Troll", 100, Weapon.CLUB);
-
+        cleric = new Cleric("Toni", "Monk", 150, HealingItem.POTION);
     }
 
     @Test
@@ -80,5 +82,21 @@ public class WarriorTest {
         assertEquals(1, warrior.getTreasureCount());
     }
 
+    @Test
+    public void canGetHealing() {
+        warrior.getHealing(cleric.getItemRestoration());
+        assertEquals(415, warrior.getHealth());
+    }
+
+    @Test
+    public void isAliveTrue(){
+        assertTrue(warrior.isAlive());
+    }
+
+    @Test
+    public void isAliveFalse(){
+        warrior.defend(1500);
+        assertFalse(warrior.isAlive());
+    }
 
 }
