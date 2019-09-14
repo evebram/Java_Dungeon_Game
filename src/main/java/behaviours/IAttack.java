@@ -1,9 +1,9 @@
 package behaviours;
 
-import items.Weapon;
+import characters.Entity;
 
 public interface IAttack {
 
-    void attack(IDefend target); //thing you're attacking
+    void attack(Entity target); //thing you're attacking
 
 }

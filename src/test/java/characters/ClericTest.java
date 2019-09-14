@@ -59,14 +59,14 @@ public class ClericTest {
     @Test
     public void canCollectReward(){
         enemy.inventory.getTreasure(Treasure.RUBY);
-        cleric.collectReward(enemy, Treasure.RUBY);
+        cleric.collectReward(enemy);
         assertEquals(1, cleric.inventory.getTreasureCount());
     }
 
     @Test
     public void canGetTotalLoot(){
         enemy.inventory.getTreasure(Treasure.RUBY);
-        cleric.collectReward(enemy, Treasure.RUBY);
+        cleric.collectReward(enemy);
         assertEquals(10, cleric.getTotalLoot());
     }
 

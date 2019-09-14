@@ -41,9 +41,9 @@ public abstract class Entity implements IDefend {
         return health > 0;
     }
 
-    public void collectReward(Entity entity, Treasure item){
+    public void collectReward(Entity entity){
         if(entity.inventory.getTreasureCount() > 0) {
-            entity.inventory.removeItem();
+            Treasure item = entity.inventory.removeItem();
             inventory.getTreasure(item);
         }
     }

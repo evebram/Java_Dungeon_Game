@@ -37,8 +37,12 @@ public class Enchanter extends Entity implements IAttack, IDefend {
         this.takeDamage(postFamiliarDamage);
     }
 
-    public void attack(IDefend target) { //calls iDefend of attacked
-        int attackPower = this.getSpellDamage();
-        target.defend(attackPower);
+    public void attack(Entity target) {
+        if(target.isAlive()){
+            int attackPower = this.getSpellDamage();
+            target.defend(attackPower);
+        } else {
+            collectReward(target);
+        }
     }
 }

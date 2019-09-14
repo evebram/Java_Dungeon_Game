@@ -72,14 +72,14 @@ public class WarriorTest {
     @Test
     public void canCollectReward(){
         enemy.inventory.getTreasure(Treasure.RUBY);
-        warrior.collectReward(enemy, Treasure.RUBY);
+        warrior.collectReward(enemy);
         assertEquals(1, warrior.inventory.getTreasureCount());
     }
 
     @Test
     public void canGetTotalLoot(){
         enemy.inventory.getTreasure(Treasure.RUBY);
-        warrior.collectReward(enemy, Treasure.RUBY);
+        warrior.collectReward(enemy);
         assertEquals(10, warrior.getTotalLoot());
     }
 

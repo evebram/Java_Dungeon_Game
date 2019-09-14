@@ -69,14 +69,14 @@ public class EnchanterTest {
     @Test
     public void canCollectReward(){
         enemy.inventory.getTreasure(Treasure.RUBY);
-        enchanter.collectReward(enemy, Treasure.RUBY);
+        enchanter.collectReward(enemy);
         assertEquals(1, enchanter.inventory.getTreasureCount());
     }
 
     @Test
     public void canGetTotalLoot(){
         enemy.inventory.getTreasure(Treasure.RUBY);
-        enchanter.collectReward(enemy, Treasure.RUBY);
+        enchanter.collectReward(enemy);
         assertEquals(10, enchanter.getTotalLoot());
     }
 

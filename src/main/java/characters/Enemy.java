@@ -30,9 +30,13 @@ public class Enemy extends Entity {
         this.takeDamage(postArmourDamage);
     }
 
-    public void attack(IDefend target) { //calls iDefend of attacked
-        int attackPower = this.getWeaponDamage();
-        target.defend(attackPower);
+    public void attack(Entity target) {
+        if (target.isAlive()) {
+            int attackPower = this.getWeaponDamage();
+            target.defend(attackPower);
+        } else {
+            collectReward(target);
+        }
     }
 
     public void generateInventory(){

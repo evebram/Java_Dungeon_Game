@@ -19,8 +19,8 @@ public class Inventory {
         return inventory.size();
     }
 
-    public void removeItem() {
-        inventory.remove(0);
+    public Treasure removeItem() {
+        return inventory.remove(0);
     }
 
     public int getInventoryWorth() {
