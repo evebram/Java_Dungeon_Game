@@ -1,9 +1,6 @@
 package characters;
 
-import stats.Armour;
-import stats.HealingItem;
-import stats.Treasure;
-import stats.Weapon;
+import stats.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,25 +9,25 @@ import static org.junit.Assert.*;
 public class EnemyTest {
 
     Enemy enemy;
-    Warrior warrior;
+    Enchanter enchanter;
     Cleric cleric;
 
     @Before
     public void setUp() {
-        enemy = new Enemy("Ben", "Troll", 100, Weapon.CLUB);
-        warrior = new Warrior("Eve", "Dwarf", 400, Armour.HELMET, Weapon.CLUB);
-        cleric = new Cleric("Toni", "Human", 150, HealingItem.POTION);
+        cleric = new Cleric(Name.IZZY, Race.ORC, 150, HealingItem.POTION);
+        enchanter = new Enchanter(Name.DENICE, Race.DWARF, 200, Familiar.TOAD, Spell.FIREBALL);
+        enemy = new Enemy(Name.MELISSA, Race.GNOME, 100, Armour.CUIRASS, Weapon.CLUB);
 
     }
 
     @Test
     public void hasName() {
-        assertEquals("Ben", enemy.getName());
+        assertEquals(Name.MELISSA, enemy.getName());
     }
 
     @Test
     public void hasRace() {
-        assertEquals("Troll", enemy.getRace());
+        assertEquals(Race.GNOME, enemy.getRace());
     }
 
     @Test
@@ -51,13 +48,13 @@ public class EnemyTest {
     @Test
     public void canDefend() {
         enemy.defend(40);
-        assertEquals(60, enemy.getHealth()); // make sure enemy attack goes down
+        assertEquals(90, enemy.getHealth());
     }
 
     @Test
     public void canAttack() {
-        enemy.attack(warrior);
-        assertEquals(40, warrior.getWeaponDamage()); // make sure warrior health goes down
+        enemy.attack(enchanter);
+        assertEquals(20, enchanter.getSpellDamage());
     }
 
     @Test

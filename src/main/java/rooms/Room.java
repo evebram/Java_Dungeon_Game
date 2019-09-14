@@ -16,6 +16,7 @@ public class Room {
 
     public Room(Dungeon dungeon){
         this.dungeon = dungeon;
+        this.enemy = enemy;
         this.adversaries = new ArrayList<Enemy>();
         this.combatants = new ArrayList<Enemy>();
     }

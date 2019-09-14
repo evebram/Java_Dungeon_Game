@@ -14,19 +14,19 @@ public class WarriorTest {
 
     @Before
     public void setUp() {
-        warrior = new Warrior(Name.BEATRICE, Race.HALFLING, warrior.getHealth(),  Armour.HELMET, Weapon.CLUB);
+        warrior = new Warrior(Name.BEATRICE, Race.HALFLING, 400,  Armour.HELMET, Weapon.CLUB);
         enemy = new Enemy(Name.IZZY, Race.GOBLIN, 100, Armour.HELMET, Weapon.CLUB);
         cleric = new Cleric(Name.STACY, Race.ORC, 150, HealingItem.POTION);
     }
 
     @Test
     public void hasName() {
-        assertEquals("Eve", warrior.getName());
+        assertEquals(Name.BEATRICE, warrior.getName());
     }
 
     @Test
     public void hasRace() {
-        assertEquals("Dwarf", warrior.getRace());
+        assertEquals(Race.HALFLING, warrior.getRace());
     }
 
     @Test
@@ -63,7 +63,7 @@ public class WarriorTest {
     @Test
     public void canAttack() {
         warrior.attack(enemy);
-        assertEquals(40, enemy.getWeaponDamage()); // make sure warrior health goes down
+        assertEquals(40, enemy.getWeaponDamage());
     }
 
     @Test

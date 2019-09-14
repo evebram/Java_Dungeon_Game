@@ -1,8 +1,7 @@
 package rooms;
 
 import characters.Enemy;
-import stats.Dungeon;
-import stats.Weapon;
+import stats.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -22,12 +21,12 @@ public class RoomTest {
     @Before
     public void setUp(){
         this.room = new Room(Dungeon.DUNGEON1);
-        this.enemy1 = new Enemy("Marvin", "Goblin", 50, Weapon.SWORD);
-        this.enemy2 = new Enemy("Karen", "Undead", 150, Weapon.AXE);
-        this.enemy3 = new Enemy("Gloria", "Orc", 200, Weapon.CLUB);
-        this.enemy4 = new Enemy("Patrica", "Fiend", 250, Weapon.SWORD);
-        this.enemy5 = new Enemy("Harold", "Troll", 300, Weapon.CLUB);
-        this.enemy6 = new Enemy("Beatrice", "Lich", 400, Weapon.AXE);
+        this.enemy1 = new Enemy(Name.getRandomName(), Race.getRandomRace(), 80, Armour.getRandomArmour(), Weapon.getRandomWeapon());
+        this.enemy2 = new Enemy(Name.getRandomName(), Race.getRandomRace(), 120, Armour.getRandomArmour(), Weapon.getRandomWeapon());
+        this.enemy3 = new Enemy(Name.getRandomName(), Race.getRandomRace(), 160, Armour.getRandomArmour(), Weapon.getRandomWeapon());
+        this.enemy4 = new Enemy(Name.getRandomName(), Race.getRandomRace(), 200, Armour.getRandomArmour(), Weapon.getRandomWeapon());
+        this.enemy5 = new Enemy(Name.getRandomName(), Race.getRandomRace(), 240, Armour.getRandomArmour(), Weapon.getRandomWeapon());
+        this.enemy6 = new Enemy(Name.getRandomName(), Race.getRandomRace(), 280, Armour.getRandomArmour(), Weapon.getRandomWeapon());
 
         room.addEnemyToAdversaries(enemy1);
         room.addEnemyToAdversaries(enemy2);

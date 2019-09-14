@@ -4,10 +4,14 @@ import java.util.Random;
 
 public enum Name {
     BEATRICE,
+    HAROLD,
     DENICE,
     MELISSA,
+    KEVIN,
     STACY,
+    MARVIN,
     POPPY,
+    BARRY,
     IZZY;
 
     private static final Name[] VALUES = values();
