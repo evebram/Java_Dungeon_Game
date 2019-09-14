@@ -1,6 +1,6 @@
 package inventory;
 
-import items.Treasure;
+import stats.Treasure;
 import java.util.ArrayList;
 
 public class Inventory {

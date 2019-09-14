@@ -1,8 +1,8 @@
 package rooms;
 
 import characters.Enemy;
-import items.Dungeon;
-import items.Weapon;
+import stats.Dungeon;
+import stats.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 

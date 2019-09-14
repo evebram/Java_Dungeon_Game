@@ -1,6 +1,6 @@
 package characters;
 
-import items.*;
+import stats.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -25,8 +25,8 @@ public class ClericTest {
     }
 
     @Test
-    public void hasType() {
-        assertEquals("Human", cleric.getType());
+    public void hasRace() {
+        assertEquals("Human", cleric.getRace());
     }
 
     @Test

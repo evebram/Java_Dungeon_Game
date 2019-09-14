@@ -2,19 +2,15 @@ package characters;
 
 import behaviours.IAttack;
 import behaviours.IDefend;
-import items.Armour;
-import items.Treasure;
-import items.Weapon;
-
-import java.util.ArrayList;
+import stats.*;
 
 public class Warrior extends Entity implements IAttack, IDefend {
 
     private Armour armour;
     private Weapon weapon;
 
-    public Warrior(String name, String type, int health, Armour armour, Weapon weapon) {
-        super(name, type, health);
+    public Warrior(Name name, Race race, int health, Armour armour, Weapon weapon) {
+        super(name, race, health);
         this.armour = armour;
         this.weapon = weapon;
     }
@@ -48,7 +44,5 @@ public class Warrior extends Entity implements IAttack, IDefend {
             collectReward(target);
         }
     }
-
-
 
 }

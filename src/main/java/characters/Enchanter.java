@@ -2,16 +2,15 @@ package characters;
 
 import behaviours.IAttack;
 import behaviours.IDefend;
-import items.Familiar;
-import items.Spell;
+import stats.*;
 
 public class Enchanter extends Entity implements IAttack, IDefend {
 
     private Familiar familiar;
     private Spell spell;
 
-    public Enchanter(String name, String type, int health, Familiar familiar, Spell spell) {
-        super(name, type, health);
+    public Enchanter(Name name, Race race, int health, Familiar familiar, Spell spell) {
+        super(name, race, health);
         this.familiar = familiar;
         this.spell = spell;
     }
@@ -45,4 +44,5 @@ public class Enchanter extends Entity implements IAttack, IDefend {
             collectReward(target);
         }
     }
+
 }

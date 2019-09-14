@@ -1,9 +1,9 @@
 package characters;
 
-import items.Armour;
-import items.HealingItem;
-import items.Treasure;
-import items.Weapon;
+import stats.Armour;
+import stats.HealingItem;
+import stats.Treasure;
+import stats.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -28,8 +28,8 @@ public class WarriorTest {
     }
 
     @Test
-    public void hasType() {
-        assertEquals("Dwarf", warrior.getType());
+    public void hasRace() {
+        assertEquals("Dwarf", warrior.getRace());
     }
 
     @Test

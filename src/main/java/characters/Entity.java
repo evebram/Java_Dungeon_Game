@@ -2,28 +2,31 @@ package characters;
 
 import behaviours.IDefend;
 import inventory.Inventory;
-import items.Treasure;
+import stats.Health;
+import stats.Name;
+import stats.Race;
+import stats.Treasure;
 
 public abstract class Entity implements IDefend {
 
-    private String name;
-    private String type;
+    private Name name;
+    private Race race;
     private int health;
     Inventory inventory;
 
-    public Entity(String name, String type, int health) {
+    public Entity(Name name, Race race, int health) {
         this.name = name;
-        this.type = type;
+        this.race = race;
         this.health = health;
         this.inventory = new Inventory();
     }
 
-    public String getName() {
+    public Name getName() {
         return name;
     }
 
-    public String getType() {
-        return type;
+    public Race getRace() {
+        return race;
     }
 
     public int getHealth() {
@@ -37,6 +40,7 @@ public abstract class Entity implements IDefend {
     public void getHealing(int restoration) {
         health += restoration;
     }
+
     public boolean isAlive(){
         return health > 0;
     }

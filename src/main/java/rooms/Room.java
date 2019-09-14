@@ -1,13 +1,10 @@
 package rooms;
 
 import characters.Enemy;
-import items.Dungeon;
+import stats.Dungeon;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Random;
-
-import static items.Treasure.getRandomTreasure;
 
 public class Room {
 

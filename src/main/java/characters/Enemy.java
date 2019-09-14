@@ -1,19 +1,18 @@
 package characters;
 
 
-import behaviours.IAttack;
 import behaviours.IDefend;
-import items.Treasure;
-import items.Weapon;
+import stats.Name;
+import stats.Race;
+import stats.Treasure;
+import stats.Weapon;
 
-import java.util.ArrayList;
-
-public class Enemy extends Entity {
+public class Enemy extends Entity implements IDefend {
 
     private Weapon weapon;
 
-    public Enemy(String name, String type, int health, Weapon weapon) {
-        super(name, type, health);
+    public Enemy(Name name, Race race, int health, Weapon weapon) {
+        super(name, race, health);
         this.weapon = weapon;
     }
 

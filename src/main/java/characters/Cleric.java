@@ -2,14 +2,16 @@ package characters;
 
 import behaviours.IDefend;
 import behaviours.IHeal;
-import items.HealingItem;
+import stats.HealingItem;
+import stats.Name;
+import stats.Race;
 
 public class Cleric extends Entity implements IDefend, IHeal {
 
     private HealingItem healingItem;
 
-    public Cleric(String name, String type, int health, HealingItem healingItem) {
-        super(name, type, health);
+    public Cleric(Name name, Race race, int health, HealingItem healingItem) {
+        super(name, race, health);
         this.healingItem = healingItem;
     }
 
@@ -30,4 +32,5 @@ public class Cleric extends Entity implements IDefend, IHeal {
         int restoration = this.getItemRestoration();
         target.getHealing(restoration);
     }
+
 }

@@ -1,6 +1,6 @@
 package characters;
 
-import items.*;
+import stats.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -25,8 +25,8 @@ public class EnchanterTest {
     }
 
     @Test
-    public void hasType() {
-        assertEquals("Dwarf", enchanter.getType());
+    public void hasRace() {
+        assertEquals("Dwarf", enchanter.getRace());
     }
 
     @Test
