@@ -1,9 +1,6 @@
 package characters;
 
-import stats.Armour;
-import stats.HealingItem;
-import stats.Treasure;
-import stats.Weapon;
+import stats.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,9 +14,9 @@ public class WarriorTest {
 
     @Before
     public void setUp() {
-        warrior = new Warrior("Eve", "Dwarf", 400, Armour.HELMET, Weapon.CLUB);
-        enemy = new Enemy("Ben", "Troll", 100, Weapon.CLUB);
-        cleric = new Cleric("Toni", "Monk", 150, HealingItem.POTION);
+        warrior = new Warrior(Name.BEATRICE, Race.HALFLING, warrior.getHealth(),  Armour.HELMET, Weapon.CLUB);
+        enemy = new Enemy(Name.IZZY, Race.GOBLIN, 100, Armour.HELMET, Weapon.CLUB);
+        cleric = new Cleric(Name.STACY, Race.ORC, 150, HealingItem.POTION);
     }
 
     @Test

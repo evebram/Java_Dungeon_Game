@@ -14,19 +14,19 @@ public class ClericTest {
 
     @Before
     public void setUp() {
-        cleric = new Cleric("Toni", "Human", 150, HealingItem.POTION);
-        enchanter = new Enchanter("Shonagh", "Dwarf", 200, Familiar.OWL, Spell.FIREBALL);
-        enemy = new Enemy("Ben", "Troll", 100, Weapon.CLUB);
+        cleric = new Cleric(Name.IZZY, Race.ORC, 150, HealingItem.POTION);
+        enchanter = new Enchanter(Name.DENICE, Race.DWARF, 200, Familiar.OWL, Spell.FIREBALL);
+        enemy = new Enemy(Name.MELISSA, Race.GNOME, 100, Armour.CUIRASS, Weapon.CLUB);
     }
 
     @Test
     public void hasName() {
-        assertEquals("Toni", cleric.getName());
+        assertEquals(Name.IZZY, cleric.getName());
     }
 
     @Test
     public void hasRace() {
-        assertEquals("Human", cleric.getRace());
+        assertEquals(Race.ORC, cleric.getRace());
     }
 
     @Test
@@ -53,7 +53,7 @@ public class ClericTest {
     @Test
     public void canHeal() {
         cleric.heal(enchanter);
-        assertEquals(215, enchanter.getHealth()); // make sure warrior health goes down
+        assertEquals(215, enchanter.getHealth());
     }
 
     @Test

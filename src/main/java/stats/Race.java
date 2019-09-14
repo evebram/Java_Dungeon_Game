@@ -4,10 +4,14 @@ import java.util.Random;
 
 public enum Race {
     HUMAN,
+    UNDEAD,
     DWARF,
+    ORC,
     ELF,
+    TROLL,
     GNOME,
-    HALFLING;
+    HALFLING,
+    GOBLIN;
 
     private static final Race[] VALUES = values();
     private static final int SIZE = VALUES.length;

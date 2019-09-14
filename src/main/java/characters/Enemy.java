@@ -2,17 +2,16 @@ package characters;
 
 
 import behaviours.IDefend;
-import stats.Name;
-import stats.Race;
-import stats.Treasure;
-import stats.Weapon;
+import stats.*;
 
 public class Enemy extends Entity implements IDefend {
 
     private Weapon weapon;
+    private Armour armour;
 
-    public Enemy(Name name, Race race, int health, Weapon weapon) {
+    public Enemy(Name name, Race race, int health, Armour armour, Weapon weapon) {
         super(name, race, health);
+        this.armour = armour;
         this.weapon = weapon;
     }
 
@@ -24,8 +23,16 @@ public class Enemy extends Entity implements IDefend {
         return weapon.getDamage();
     }
 
-    public void defend(int attackPower){ //int damage
-        int postArmourDamage = attackPower;
+    public Armour getArmour() {
+        return armour;
+    }
+
+    public int getArmourResistance() {
+        return armour.getResistance();
+    }
+
+    public void defend(int attackPower){
+        int postArmourDamage = attackPower / armour.getResistance();
         this.takeDamage(postArmourDamage);
     }
 
