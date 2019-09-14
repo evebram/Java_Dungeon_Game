@@ -35,4 +35,8 @@ public class Enemy extends Entity {
         target.defend(attackPower);
     }
 
+    public void generateInventory(){
+        inventory.getTreasure(Treasure.getRandomTreasure());
+    }
+
 }

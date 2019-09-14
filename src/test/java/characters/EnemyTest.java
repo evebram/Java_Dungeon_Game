@@ -2,7 +2,6 @@ package characters;
 
 import items.Armour;
 import items.HealingItem;
-import items.Treasure;
 import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
@@ -64,6 +63,12 @@ public class EnemyTest {
     public void canGetHealing() {
         enemy.getHealing(cleric.getItemRestoration());
         assertEquals(115, enemy.getHealth());
+    }
+
+    @Test
+    public void canGenerateInventory(){
+        enemy.generateInventory();
+        assertEquals(1, enemy.inventory.getTreasureCount());
     }
 
     @Test

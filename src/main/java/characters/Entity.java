@@ -1,23 +1,21 @@
 package characters;
 
-import behaviours.IAttack;
 import behaviours.IDefend;
+import inventory.Inventory;
 import items.Treasure;
-
-import java.util.ArrayList;
 
 public abstract class Entity implements IDefend {
 
     private String name;
     private String type;
     private int health;
-    private ArrayList<Treasure> inventory;
+    Inventory inventory;
 
     public Entity(String name, String type, int health) {
         this.name = name;
         this.type = type;
         this.health = health;
-        this.inventory = new ArrayList<Treasure>();
+        this.inventory = new Inventory();
     }
 
 
@@ -40,24 +38,19 @@ public abstract class Entity implements IDefend {
     public void getHealing(int restoration) {
         health += restoration;
     }
-
-    public void getTreasure(Treasure item){
-        inventory.add(item);
+    public boolean isAlive(){
+        return health > 0;
     }
 
-    public void collectReward(Entity entity){
-        if(entity.getTreasureCount() > 0) {
-            Treasure treasure = entity.inventory.remove(0);
-            inventory.add(treasure);
+    public void collectReward(Entity entity, Treasure item){
+        if(entity.inventory.getTreasureCount() > 0) {
+            entity.inventory.removeItem();
+            inventory.getTreasure(item);
         }
     }
 
-    public int getTreasureCount(){
-        return inventory.size();
-    }
-
-    public boolean isAlive(){
-        return health > 0;
+    public void getTotalLoot(){
+        this.inventory.getInventoryWorth();
     }
 
 }

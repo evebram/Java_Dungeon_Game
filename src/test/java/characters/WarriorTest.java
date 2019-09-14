@@ -70,16 +70,10 @@ public class WarriorTest {
     }
 
     @Test
-    public void canGetTreasure() {
-        warrior.getTreasure(Treasure.RUBY);
-        assertEquals(1, warrior.getTreasureCount());
-    }
-
-    @Test
     public void canCollectReward(){
-        enemy.getTreasure(Treasure.RUBY);
-        warrior.collectReward(enemy);
-        assertEquals(1, warrior.getTreasureCount());
+        enemy.inventory.getTreasure(Treasure.RUBY);
+        warrior.collectReward(enemy, Treasure.RUBY);
+        assertEquals(1, warrior.inventory.getTreasureCount());
     }
 
     @Test

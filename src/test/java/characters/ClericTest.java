@@ -57,16 +57,10 @@ public class ClericTest {
     }
 
     @Test
-    public void canGetTreasure() {
-        cleric.getTreasure(Treasure.RUBY);
-        assertEquals(1, cleric.getTreasureCount());
-    }
-
-    @Test
     public void canCollectReward(){
-        enemy.getTreasure(Treasure.RUBY);
-        cleric.collectReward(enemy);
-        assertEquals(1, cleric.getTreasureCount());
+        enemy.inventory.getTreasure(Treasure.RUBY);
+        cleric.collectReward(enemy, Treasure.RUBY);
+        assertEquals(1, cleric.inventory.getTreasureCount());
     }
 
     @Test
