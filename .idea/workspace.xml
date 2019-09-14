@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df6aa688-2a77-42f7-b432-52cb8d285335" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/inventory/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inventory/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rooms/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/rooms/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rooms/RoomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rooms/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rooms/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/rooms/RoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/rooms/RoomTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,12 +23,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/rooms/Room.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="56" column="52" lean-forward="true" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
+                <state relative-caret-position="427">
+                  <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1748#1749#0" expanded="true" />
-                    <element signature="e#1773#1774#0" expanded="true" />
+                    <element signature="e#1908#1909#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -94,8 +88,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/rooms/RoomTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="548">
-                  <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+                <state relative-caret-position="112">
+                  <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1186#1187#0" expanded="true" />
@@ -159,8 +153,8 @@
         <option value="$PROJECT_DIR$/src/test/java/characters/EnemyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/characters/Entity.java" />
         <option value="$PROJECT_DIR$/src/main/java/inventory/Inventory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rooms/Room.java" />
         <option value="$PROJECT_DIR$/src/test/java/rooms/RoomTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rooms/Room.java" />
       </list>
     </option>
   </component>
@@ -387,34 +381,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WarriorTest - 2019.09.14 at 16h 44m 48s.xml">
-      <configuration name="WarriorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Dungeon - 2019.09.14 at 16h 45m 47s.xml">
-      <configuration name="All in Dungeon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Dungeon - 2019.09.14 at 16h 48m 03s.xml">
-      <configuration name="All in Dungeon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RoomTest - 2019.09.14 at 21h 30m 33s.xml">
-      <configuration name="RoomTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Dungeon - 2019.09.14 at 21h 30m 51s.xml">
-      <configuration name="All in Dungeon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Dungeon - 2019.09.14 at 21h 34m 36s.xml">
-      <configuration name="All in Dungeon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Dungeon - 2019.09.14 at 21h 35m 09s.xml">
-      <configuration name="All in Dungeon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RoomTest - 2019.09.14 at 21h 48m 54s.xml">
-      <configuration name="RoomTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RoomTest - 2019.09.14 at 21h 51m 41s.xml">
       <configuration name="RoomTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RoomTest - 2019.09.14 at 21h 52m 19s.xml">
+      <configuration name="RoomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoomTest - 2019.09.14 at 22h 04m 35s.xml">
+      <configuration name="RoomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoomTest - 2019.09.14 at 22h 22m 58s.xml">
+      <configuration name="RoomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoomTest - 2019.09.14 at 22h 28m 23s.xml">
+      <configuration name="RoomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoomTest - 2019.09.14 at 22h 29m 28s.xml">
+      <configuration name="RoomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoomTest - 2019.09.14 at 22h 32m 44s.xml">
+      <configuration name="RoomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoomTest - 2019.09.14 at 22h 36m 17s.xml">
+      <configuration name="RoomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoomTest - 2019.09.14 at 22h 45m 09s.xml">
+      <configuration name="RoomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoomTest - 2019.09.14 at 22h 45m 12s.xml">
       <configuration name="RoomTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -422,7 +416,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14449213" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14449213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -431,8 +425,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16953316" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16953316" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3992629" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -745,22 +739,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rooms/Room.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="56" column="52" lean-forward="true" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
+        <state relative-caret-position="427">
+          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rooms/RoomTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        <state relative-caret-position="112">
+          <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1186#1187#0" expanded="true" />
