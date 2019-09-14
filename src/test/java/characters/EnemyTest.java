@@ -2,6 +2,7 @@ package characters;
 
 import items.Armour;
 import items.HealingItem;
+import items.Treasure;
 import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
@@ -69,6 +70,12 @@ public class EnemyTest {
     public void canGenerateInventory(){
         enemy.generateInventory();
         assertEquals(1, enemy.inventory.getTreasureCount());
+    }
+
+    @Test
+    public void canGetTotalLoot(){
+        enemy.inventory.getTreasure(Treasure.RUBY);
+        assertEquals(10, enemy.getTotalLoot());
     }
 
     @Test

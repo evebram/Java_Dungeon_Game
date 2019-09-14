@@ -64,6 +64,13 @@ public class ClericTest {
     }
 
     @Test
+    public void canGetTotalLoot(){
+        enemy.inventory.getTreasure(Treasure.RUBY);
+        cleric.collectReward(enemy, Treasure.RUBY);
+        assertEquals(10, cleric.getTotalLoot());
+    }
+
+    @Test
     public void canGetHealing() {
         enchanter.getHealing(cleric.getItemRestoration());
         assertEquals(215, enchanter.getHealth());

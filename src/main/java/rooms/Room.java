@@ -40,7 +40,7 @@ public class Room {
     }
 
     //select an enemy based on index from adversaries arrayList and return to combatants arrayList
-    public ArrayList<Enemy> getRandomElement(ArrayList<Enemy> adversaries, int totalEnemies){
+    public void getRandomElement(ArrayList<Enemy> adversaries, int totalEnemies){
         Random rand = new Random();
         for(int i = 0; i < totalEnemies; i++) {
             //take a random index between 0 and size of given arrayList
@@ -50,7 +50,7 @@ public class Room {
             //remove selected enemy from adversaries arrayList
             adversaries.remove(randomIndex);
         }
-        return combatants;
+        //return combatants;
     }
 
     public int getCombatantsTotal(){

@@ -18,7 +18,6 @@ public abstract class Entity implements IDefend {
         this.inventory = new Inventory();
     }
 
-
     public String getName() {
         return name;
     }
@@ -49,8 +48,8 @@ public abstract class Entity implements IDefend {
         }
     }
 
-    public void getTotalLoot(){
-        this.inventory.getInventoryWorth();
+    public int getTotalLoot(){
+        return this.inventory.getInventoryWorth();
     }
 
 }

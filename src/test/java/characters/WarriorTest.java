@@ -77,6 +77,13 @@ public class WarriorTest {
     }
 
     @Test
+    public void canGetTotalLoot(){
+        enemy.inventory.getTreasure(Treasure.RUBY);
+        warrior.collectReward(enemy, Treasure.RUBY);
+        assertEquals(10, warrior.getTotalLoot());
+    }
+
+    @Test
     public void canGetHealing() {
         warrior.getHealing(cleric.getItemRestoration());
         assertEquals(415, warrior.getHealth());
