@@ -52,6 +52,10 @@ public abstract class Entity implements IDefend {
         }
     }
 
+    public int getInventorySize(){
+        return this.inventory.getInventorySize();
+    }
+
     public int getTotalLoot(){
         return this.inventory.getInventoryWorth();
     }

@@ -1,14 +1,13 @@
 package rooms;
 
 import characters.Enemy;
-import stats.Dungeon;
+import stats.*;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Room {
 
-    private Room room;
     private Dungeon dungeon;
     private Enemy enemy;
     private ArrayList<Enemy> adversaries;
@@ -16,7 +15,6 @@ public class Room {
 
     public Room(Dungeon dungeon){
         this.dungeon = dungeon;
-        this.enemy = enemy;
         this.adversaries = new ArrayList<Enemy>();
         this.combatants = new ArrayList<Enemy>();
     }
@@ -25,14 +23,10 @@ public class Room {
         this.adversaries.add(enemy);
     }
 
-    public void getNewRoom(){
-        room = new Room(Dungeon.getRandomDungeon());
-        room.generateEnemy();
-    }
-
     public void generateEnemy(){
-        room.getRandomElement(adversaries, dungeon.getContents());
+        this.getRandomElement(adversaries, dungeon.getContents());
         for(int i = 0; i < combatants.size(); i++){
+            enemy = new Enemy(Name.getRandomName(), Race.getRandomRace(), 200, Armour.getRandomArmour(), Weapon.getRandomWeapon());
             enemy.generateInventory();
         }
     }
@@ -58,5 +52,11 @@ public class Room {
     public int getAdversariesTotal(){
         return adversaries.size();
     }
+
+    public int returnCombatantsInventory(){
+        return combatants.get(0).getInventorySize();
+    }
+
+
 
 }

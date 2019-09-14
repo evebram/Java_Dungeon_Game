@@ -30,4 +30,8 @@ public class Inventory {
         }
         return totalValue;
     }
+
+    public int getInventorySize() {
+        return inventory.size();
+    }
 }
