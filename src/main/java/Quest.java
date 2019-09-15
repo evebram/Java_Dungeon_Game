@@ -1,7 +1,4 @@
-import characters.Cleric;
-import characters.Enchanter;
-import characters.Entity;
-import characters.Warrior;
+import characters.*;
 import rooms.Room;
 import stats.*;
 
@@ -12,9 +9,11 @@ public class Quest {
     private int dungeonLength;
     private ArrayList<Room> quest;
     private ArrayList<Entity> party;
+    private Room room;
     private Entity adventurer1;
     private Entity adventurer2;
     private Entity adventurer3;
+    private Enemy enemy;
 
     public Quest(int dungeonLength){
         this.dungeonLength = dungeonLength;
@@ -29,6 +28,30 @@ public class Quest {
         this.party.add(adventurer1);
         this.party.add(adventurer2);
         this.party.add(adventurer3);
+    }
+
+    public void generateQuest(){
+        for(int i = 0; i < dungeonLength; i++) {
+           // room.generateEnemy();
+            quest.add(room);
+           // quest.get(i).generateEnemy();
+        }
+    }
+
+    public int getQuestLength(){
+        return quest.size();
+    }
+
+    public int getQuestRoom(int i){
+        return quest.get(i).returnCombatantsInventory();
+    }
+
+    public int getPartySize(){
+        return party.size();
+    }
+
+    public int getPartyStats(int i){
+        return party.get(i).getHealth();
     }
 
 }

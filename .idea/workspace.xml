@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df6aa688-2a77-42f7-b432-52cb8d285335" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/QuestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Quest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Quest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Cleric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Cleric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rooms/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/characters/ClericTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/characters/ClericTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/rooms/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rooms/RoomTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rooms/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rooms/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/rooms/RoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/rooms/RoomTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -13,6 +20,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="202" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
@@ -21,13 +31,20 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/rooms/Room.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Quest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="427">
-                  <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+                <state relative-caret-position="393">
+                  <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1908#1909#0" expanded="true" />
+                    <element signature="e#1406#1407#0" expanded="true" />
+                    <element signature="e#1441#1442#0" expanded="true" />
+                    <element signature="e#1392#1393#0" expanded="true" />
+                    <element signature="e#1428#1429#0" expanded="true" />
+                    <element signature="e#1456#1457#0" expanded="true" />
+                    <element signature="e#1489#1490#0" expanded="true" />
+                    <element signature="e#1437#1438#0" expanded="true" />
+                    <element signature="e#1478#1479#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -68,7 +85,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/inventory/Inventory.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="490">
+                <state relative-caret-position="586">
                   <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -86,14 +103,72 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/rooms/RoomTest.java">
+            <entry file="file://$PROJECT_DIR$/src/test/java/QuestTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="112">
-                  <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
+                <state relative-caret-position="861">
+                  <caret line="41" column="49" lean-forward="true" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1186#1187#0" expanded="true" />
-                    <element signature="e#1244#1245#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/rooms/Room.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="371">
+                  <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1209#1210#0" expanded="true" />
+                    <element signature="e#1251#1252#0" expanded="true" />
+                    <element signature="e#2579#2580#0" expanded="true" />
+                    <element signature="e#2619#2620#0" expanded="true" />
+                    <element signature="e#2659#2660#0" expanded="true" />
+                    <element signature="e#2701#2702#0" expanded="true" />
+                    <element signature="e#2747#2748#0" expanded="true" />
+                    <element signature="e#2807#2808#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/characters/Cleric.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="629">
+                  <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/characters/ClericTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-52">
+                  <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#548#549#0" expanded="true" />
+                    <element signature="e#605#606#0" expanded="true" />
+                    <element signature="e#644#645#0" expanded="true" />
+                    <element signature="e#700#701#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/rooms/RoomTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="431">
+                  <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -106,9 +181,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -140,21 +215,22 @@
         <option value="$PROJECT_DIR$/src/main/java/stats/Weapon.java" />
         <option value="$PROJECT_DIR$/src/main/java/stats/Health.java" />
         <option value="$PROJECT_DIR$/src/main/java/behaviours/IAdventurer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/characters/Cleric.java" />
         <option value="$PROJECT_DIR$/src/main/java/characters/Enchanter.java" />
         <option value="$PROJECT_DIR$/src/main/java/characters/Warrior.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Quest.java" />
         <option value="$PROJECT_DIR$/src/main/java/stats/Race.java" />
         <option value="$PROJECT_DIR$/src/main/java/characters/Enemy.java" />
-        <option value="$PROJECT_DIR$/src/test/java/characters/ClericTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/characters/WarriorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/stats/Name.java" />
         <option value="$PROJECT_DIR$/src/test/java/characters/EnchanterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/characters/EnemyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/characters/Entity.java" />
         <option value="$PROJECT_DIR$/src/main/java/inventory/Inventory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rooms/RoomTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/characters/Cleric.java" />
+        <option value="$PROJECT_DIR$/src/test/java/characters/ClericTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/rooms/Room.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Quest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rooms/RoomTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/QuestTest.java" />
       </list>
     </option>
   </component>
@@ -289,26 +365,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RoomTest">
-    <configuration name="All in Dungeon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.QuestTest.canCheckRoomContents">
+    <configuration name="QuestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Dungeon" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="QuestTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClericTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuestTest.canCheckRoomContents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Dungeon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="characters.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="characters" />
-      <option name="MAIN_CLASS_NAME" value="characters.ClericTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QuestTest" />
+      <option name="METHOD_NAME" value="canCheckRoomContents" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestTest.canGenerateQuest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Dungeon" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QuestTest" />
+      <option name="METHOD_NAME" value="canGenerateQuest1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -328,42 +410,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WarriorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoomTest.canGenerateEnemyRoom1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Dungeon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="characters.*" />
+          <option name="PATTERN" value="rooms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="characters" />
-      <option name="MAIN_CLASS_NAME" value="characters.WarriorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="characters in Dungeon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Dungeon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="characters.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="characters" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="rooms" />
+      <option name="MAIN_CLASS_NAME" value="rooms.RoomTest" />
+      <option name="METHOD_NAME" value="canGenerateEnemyRoom1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuestTest.canCheckRoomContents" />
+        <item itemvalue="JUnit.QuestTest" />
         <item itemvalue="JUnit.RoomTest" />
-        <item itemvalue="JUnit.All in Dungeon" />
-        <item itemvalue="JUnit.WarriorTest" />
-        <item itemvalue="JUnit.ClericTest" />
-        <item itemvalue="JUnit.characters in Dungeon" />
+        <item itemvalue="JUnit.QuestTest.canGenerateQuest1" />
+        <item itemvalue="JUnit.RoomTest.canGenerateEnemyRoom1" />
       </list>
     </recent_temporary>
   </component>
@@ -381,42 +450,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RoomTest - 2019.09.14 at 21h 51m 41s.xml">
+    <history-entry file="QuestTest - 2019.09.15 at 01h 03m 00s.xml">
+      <configuration name="QuestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuestTest - 2019.09.15 at 01h 04m 25s.xml">
+      <configuration name="QuestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuestTest_canGenerateQuest1 - 2019.09.15 at 01h 04m 34s.xml">
+      <configuration name="QuestTest.canGenerateQuest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuestTest - 2019.09.15 at 01h 04m 44s.xml">
+      <configuration name="QuestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuestTest - 2019.09.15 at 01h 05m 40s.xml">
+      <configuration name="QuestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuestTest - 2019.09.15 at 01h 05m 42s.xml">
+      <configuration name="QuestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoomTest - 2019.09.15 at 01h 07m 24s.xml">
       <configuration name="RoomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoomTest - 2019.09.14 at 21h 52m 19s.xml">
+    <history-entry file="RoomTest - 2019.09.15 at 01h 08m 03s.xml">
       <configuration name="RoomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoomTest - 2019.09.14 at 22h 04m 35s.xml">
+    <history-entry file="RoomTest - 2019.09.15 at 01h 10m 39s.xml">
       <configuration name="RoomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoomTest - 2019.09.14 at 22h 22m 58s.xml">
-      <configuration name="RoomTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RoomTest - 2019.09.14 at 22h 28m 23s.xml">
-      <configuration name="RoomTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RoomTest - 2019.09.14 at 22h 29m 28s.xml">
-      <configuration name="RoomTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RoomTest - 2019.09.14 at 22h 32m 44s.xml">
-      <configuration name="RoomTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RoomTest - 2019.09.14 at 22h 36m 17s.xml">
-      <configuration name="RoomTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RoomTest - 2019.09.14 at 22h 45m 09s.xml">
-      <configuration name="RoomTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RoomTest - 2019.09.14 at 22h 45m 12s.xml">
-      <configuration name="RoomTest" configurationId="JUnit" />
+    <history-entry file="QuestTest - 2019.09.15 at 01h 10m 45s.xml">
+      <configuration name="QuestTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14449213" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14449213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -434,6 +503,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3280098" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -453,8 +523,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34152335" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16953316" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3992629" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -462,15 +532,21 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3280098" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3297568" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout-to-restore>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Java_Dungeon_Game$RoomTest_canGenerateEnemyRoom1.ic" NAME="RoomTest.canGenerateEnemyRoom1 Coverage Results" MODIFIED="1568504890065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>rooms.*</FILTER>
+    </SUITE>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/characters/EntityTest.java" />
@@ -581,18 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/characters/Cleric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stats/Spell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -604,30 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Quest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/characters/ClericTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -725,9 +765,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/characters/Cleric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/characters/ClericTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/inventory/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
+        <state relative-caret-position="586">
           <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -739,39 +817,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rooms/Room.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        <state relative-caret-position="371">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#2579#2580#0" expanded="true" />
+            <element signature="e#2619#2620#0" expanded="true" />
+            <element signature="e#2659#2660#0" expanded="true" />
+            <element signature="e#2701#2702#0" expanded="true" />
+            <element signature="e#2747#2748#0" expanded="true" />
+            <element signature="e#2807#2808#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Quest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1441#1442#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1428#1429#0" expanded="true" />
+            <element signature="e#1456#1457#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+            <element signature="e#1478#1479#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rooms/RoomTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
+        <state relative-caret-position="431">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1244#1245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/QuestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="41" column="49" lean-forward="true" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

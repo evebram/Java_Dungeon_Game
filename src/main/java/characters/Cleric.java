@@ -30,7 +30,9 @@ public class Cleric extends Entity implements IDefend, IHeal {
 
     public void heal(Entity target) {
         int restoration = this.getItemRestoration();
-        target.getHealing(restoration);
+        if(target.getHealth() > 0) {
+            target.getHealing(restoration);
+        }
     }
 
 }

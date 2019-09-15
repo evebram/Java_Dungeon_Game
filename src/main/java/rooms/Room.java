@@ -13,25 +13,43 @@ public class Room {
     private ArrayList<Enemy> adversaries;
     private ArrayList<Enemy> combatants;
 
+    private Enemy enemy1;
+    private Enemy enemy2;
+    private Enemy enemy3;
+
     public Room(Dungeon dungeon) {
         this.dungeon = dungeon;
         this.adversaries = new ArrayList<Enemy>();
         this.combatants = new ArrayList<Enemy>();
-    }
 
-    public void addEnemyToAdversaries(Enemy enemy) {
-        this.adversaries.add(enemy);
+
+        this.enemy1 = new Enemy(Name.getRandomName(), Race.getRandomRace(), 100, Armour.getRandomArmour(), Weapon.getRandomWeapon());
+        this.enemy2 = new Enemy(Name.getRandomName(), Race.getRandomRace(), 140, Armour.getRandomArmour(), Weapon.getRandomWeapon());
+        this.enemy3 = new Enemy(Name.getRandomName(), Race.getRandomRace(), 160, Armour.getRandomArmour(), Weapon.getRandomWeapon());
+
+        this.adversaries.add(enemy1);
+        this.adversaries.add(enemy2);
+        this.adversaries.add(enemy3);
+
     }
 
     public void addEnemyToCombatants(Enemy enemy) {
         this.combatants.add(enemy);
     }
 
+//    public void generateRoom(){
+//        Room room = new Room(Dungeon.getRandomDungeon());
+//        for (int i = 0; i < dungeon.getContents(); i++){
+//            enemy = new Enemy(Name.getRandomName(), Race.getRandomRace(), 120, Armour.getRandomArmour(), Weapon.getRandomWeapon());
+//            this.combatants.add(enemy);
+//            combatants.get(i).generateInventory();
+//        }
+//    }
+
     public void generateEnemy() {
         this.getRandomElement(adversaries, dungeon.getContents());
         for (int i = 0; i < combatants.size(); i++) {
-            enemy = new Enemy(Name.getRandomName(), Race.getRandomRace(), 200, Armour.getRandomArmour(), Weapon.getRandomWeapon());
-            enemy.generateInventory();
+            combatants.get(i).generateInventory();
         }
     }
 
@@ -41,7 +59,7 @@ public class Room {
         for (int i = 0; i < totalEnemies; i++) {
             //take a random index between 0 and size of given arrayList
             int randomIndex = rand.nextInt(adversaries.size());
-            //add element to combatants arrayList
+            //add enemy to combatants arrayList
             combatants.add(adversaries.get(randomIndex));
             //remove selected enemy from adversaries arrayList
             adversaries.remove(randomIndex);

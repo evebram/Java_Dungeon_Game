@@ -11,12 +11,14 @@ public class ClericTest {
     Cleric cleric;
     Enchanter enchanter;
     Enemy enemy;
+    Warrior warrior;
 
     @Before
     public void setUp() {
         cleric = new Cleric(Name.IZZY, Race.ORC, 150, HealingItem.POTION);
         enchanter = new Enchanter(Name.DENICE, Race.DWARF, 200, Familiar.OWL, Spell.FIREBALL);
         enemy = new Enemy(Name.MELISSA, Race.GNOME, 100, Armour.CUIRASS, Weapon.CLUB);
+        warrior = new Warrior(Name.BARRY, Race.HUMAN, 0,Armour.GAUNTLETS, Weapon.AXE);
     }
 
     @Test
@@ -54,6 +56,11 @@ public class ClericTest {
     public void canHeal() {
         cleric.heal(enchanter);
         assertEquals(215, enchanter.getHealth());
+    }
+
+    public void canNotHeal(){
+        cleric.heal(warrior);
+        assertEquals(0, warrior.getHealth());
     }
 
     @Test
