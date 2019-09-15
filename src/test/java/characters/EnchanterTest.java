@@ -61,6 +61,12 @@ public class EnchanterTest {
     }
 
     @Test
+    public void canChangeSpell() {
+        enchanter.changeSpell(Spell.FROSTBITE);
+        assertEquals(Spell.FROSTBITE, enchanter.getSpell());
+    }
+
+    @Test
     public void canDefend() {
         enchanter.defend(enemy.getWeaponDamage());
         assertEquals(187, enchanter.getHealth()); // make sure enemy attack goes down
