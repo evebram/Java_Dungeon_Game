@@ -51,13 +51,13 @@ public class RoomTest {
     @Test
     public void canCheckIfCompleteFalse(){
         room1.addEnemyToCombatants(enemyAlive);
-        assertEquals(false, room1.isComplete());
+        assertEquals(false, room1.isRoomComplete());
     }
 
     @Test
     public void canCheckIfCompleteTrue(){
         room1.addEnemyToCombatants(enemyDead);
-        assertEquals(true, room1.isComplete());
+        assertEquals(true, room1.isRoomComplete());
     }
 
     @Test

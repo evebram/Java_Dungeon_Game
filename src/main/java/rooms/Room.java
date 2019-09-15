@@ -46,6 +46,8 @@ public class Room {
 //        }
 //    }
 
+
+
     public void generateEnemy() {
         this.getRandomElement(adversaries, dungeon.getContents());
         for (int i = 0; i < combatants.size(); i++) {
@@ -79,7 +81,7 @@ public class Room {
         return combatants.get(0).getInventorySize();
     }
 
-    public boolean isComplete() {
+    public boolean isRoomComplete() {
         for (int i = 0; i < combatants.size(); i++) {
             if (!combatants.get(i).isAlive())
             return true;

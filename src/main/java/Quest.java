@@ -33,6 +33,8 @@ public class Quest {
     public void generateQuest(){
         for(int i = 0; i < dungeonLength; i++) {
            // room.generateEnemy();
+            room = new Room(Dungeon.getRandomDungeon());
+            room.generateEnemy();
             quest.add(room);
            // quest.get(i).generateEnemy();
         }
@@ -53,5 +55,23 @@ public class Quest {
     public int getPartyStats(int i){
         return party.get(i).getHealth();
     }
+
+//    public boolean runQuest(){
+//        generateParty();
+//        generateQuest();
+//        for(int i = 0; i < dungeonLength; i++) {
+//           if(quest.get(i).isRoomComplete())
+//               return true;
+//        }
+//        return false;
+//    }
+//
+//    public String isQuestComplete(){
+//        if (runQuest()) {
+//            return "Quest completed!";
+//        } else{
+//            return "Quest failed";
+//        }
+//    }
 
 }

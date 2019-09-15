@@ -38,8 +38,16 @@ public class QuestTest {
     @Test
     public void canCheckRoomContents(){
         quest1.generateQuest();
-        assertEquals(1, quest1.getPartyStats(0));
-        assertEquals(1, quest1.getPartyStats(1));
+        assertEquals(1, quest1.getQuestRoom(0));
+        assertEquals(1, quest1.getQuestRoom(1));
     }
+
+
+//    @Test
+//    public void canCheckIfCompleteTrue(){
+//        quest1.generateQuest();
+//        quest1.runQuest();
+//        assertEquals("Quest completed", quest1.isQuestComplete());
+//    }
 
 }
