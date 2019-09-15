@@ -61,6 +61,12 @@ public class WarriorTest {
     }
 
     @Test
+    public void canChangeWeapon() {
+        warrior.changeWeapon(Weapon.SWORD);
+        assertEquals(Weapon.SWORD, warrior.getWeapon());
+    }
+
+    @Test
     public void canDefend() {
         warrior.defend(40);
         assertEquals(387, warrior.getHealth()); // make sure enemy attack goes down
