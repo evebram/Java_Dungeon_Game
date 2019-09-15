@@ -19,6 +19,10 @@ public class Cleric extends Entity implements IDefend, IHeal {
         return healingItem;
     }
 
+    public void changeHealingItem(HealingItem healingItem) {
+        this.healingItem = healingItem;
+    }
+
     public int getItemRestoration() {
         return healingItem.getRestoration();
     }

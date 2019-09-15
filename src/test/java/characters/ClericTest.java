@@ -47,6 +47,12 @@ public class ClericTest {
     }
 
     @Test
+    public void canChangeHealingItem() {
+        cleric.changeHealingItem(HealingItem.HEALINGPRAYER);
+        assertEquals(HealingItem.HEALINGPRAYER, cleric.getHealingItem());
+    }
+
+    @Test
     public void canDefend() {
         cleric.defend(enemy.getWeaponDamage());
         assertEquals(110, cleric.getHealth());
