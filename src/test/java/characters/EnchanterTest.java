@@ -55,6 +55,12 @@ public class EnchanterTest {
     }
 
     @Test
+    public void canChangeFamiliar() {
+        enchanter.changeFamiliar(Familiar.TOAD);
+        assertEquals(Familiar.TOAD, enchanter.getFamiliar());
+    }
+
+    @Test
     public void canDefend() {
         enchanter.defend(enemy.getWeaponDamage());
         assertEquals(187, enchanter.getHealth()); // make sure enemy attack goes down

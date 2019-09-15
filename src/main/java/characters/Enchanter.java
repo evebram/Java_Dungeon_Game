@@ -19,12 +19,20 @@ public class Enchanter extends Entity implements IAttack, IDefend {
         return familiar;
     }
 
+    public void changeFamiliar(Familiar familiar) {
+        this.familiar = familiar;
+    }
+
     public int getFamiliarResistance() {
         return familiar.getResistance();
     }
 
     public Spell getSpell() {
         return spell;
+    }
+
+    public void changeSpell(Spell spell) {
+        this.spell = spell;
     }
 
     public int getSpellDamage() {
