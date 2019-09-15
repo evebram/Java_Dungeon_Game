@@ -31,6 +31,14 @@ public class Warrior extends Entity implements IAttack, IDefend {
         return weapon.getDamage();
     }
 
+    public void changeArmour(Armour armour) {
+        this.armour = armour;
+    }
+
+    public void changeWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
     public void defend(int attackPower){ //int damage
         int postArmourDamage = attackPower / armour.getResistance();
         this.takeDamage(postArmourDamage);

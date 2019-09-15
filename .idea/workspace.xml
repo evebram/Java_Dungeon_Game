@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df6aa688-2a77-42f7-b432-52cb8d285335" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Enchanter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Enchanter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/characters/EnchanterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/characters/EnchanterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/characters/WarriorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/characters/WarriorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,22 +53,6 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/characters/Enchanter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#538#539#0" expanded="true" />
-                    <element signature="e#578#579#0" expanded="true" />
-                    <element signature="e#772#773#0" expanded="true" />
-                    <element signature="e#806#807#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/inventory/Inventory.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -84,6 +67,22 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/characters/Warrior.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="236">
+                  <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#740#741#0" expanded="true" />
+                    <element signature="e#776#777#0" expanded="true" />
+                    <element signature="e#820#821#0" expanded="true" />
+                    <element signature="e#856#857#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -91,8 +90,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/QuestTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="314">
-                  <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+                <state relative-caret-position="216">
+                  <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -101,10 +100,22 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/characters/WarriorTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="277">
+                  <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/characters/EnchanterTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+                <state relative-caret-position="51">
+                  <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="60" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#551#552#0" expanded="true" />
@@ -205,10 +216,8 @@
         <option value="$PROJECT_DIR$/src/main/java/stats/Weapon.java" />
         <option value="$PROJECT_DIR$/src/main/java/stats/Health.java" />
         <option value="$PROJECT_DIR$/src/main/java/behaviours/IAdventurer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/characters/Warrior.java" />
         <option value="$PROJECT_DIR$/src/main/java/stats/Race.java" />
         <option value="$PROJECT_DIR$/src/main/java/characters/Enemy.java" />
-        <option value="$PROJECT_DIR$/src/test/java/characters/WarriorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/stats/Name.java" />
         <option value="$PROJECT_DIR$/src/test/java/characters/EnemyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/characters/Entity.java" />
@@ -221,6 +230,8 @@
         <option value="$PROJECT_DIR$/src/main/java/characters/Enchanter.java" />
         <option value="$PROJECT_DIR$/src/test/java/QuestTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/characters/EnchanterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/characters/Warrior.java" />
+        <option value="$PROJECT_DIR$/src/test/java/characters/WarriorTest.java" />
       </list>
     </option>
   </component>
@@ -432,12 +443,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Dungeon - 2019.09.15 at 15h 09m 52s.xml">
-      <configuration name="All in Dungeon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Dungeon - 2019.09.15 at 16h 07m 48s.xml">
-      <configuration name="All in Dungeon" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_Dungeon - 2019.09.15 at 16h 08m 09s.xml">
       <configuration name="All in Dungeon" configurationId="JUnit" />
     </history-entry>
@@ -462,6 +467,12 @@
     <history-entry file="All_in_Dungeon - 2019.09.15 at 16h 13m 10s.xml">
       <configuration name="All in Dungeon" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_Dungeon - 2019.09.15 at 17h 45m 57s.xml">
+      <configuration name="All in Dungeon" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Dungeon - 2019.09.15 at 17h 48m 02s.xml">
+      <configuration name="All in Dungeon" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -481,7 +492,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.45577395" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.45577395" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3280098" />
@@ -669,30 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/characters/Warrior.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/characters/WarriorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1491">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -787,7 +774,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/characters/Enchanter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="222">
           <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -799,10 +786,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/characters/Warrior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/QuestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        <state relative-caret-position="216">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -811,14 +812,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/characters/EnchanterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        <state relative-caret-position="51">
+          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="60" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#551#552#0" expanded="true" />
             <element signature="e#613#614#0" expanded="true" />
             <element signature="e#652#653#0" expanded="true" />
             <element signature="e#713#714#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/characters/WarriorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
